@@ -69,7 +69,7 @@
 
         <fieldset>
             <legend>∑¢±Ì¡Ù—‘</legend>
-            <form action="" method="post" name="frm" onsubmit="return test()">
+            <form action="result.php" method="post" name="frm" onsubmit="return test()">
                 <table border="0" cellpadding="5" cellspacing="0" width="0">
                     <tbody>
                     <tr>
