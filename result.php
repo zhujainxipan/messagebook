@@ -27,15 +27,8 @@ function magic($str)
 echo $title . ":" . $content . ":" . $username;
 
 // 数据库部分
-
 // 连接数据库
-$link = mysql_connect('localhost', 'root', 'admin');
-if (!$link) {
-    die('连接失败' . mysql_error());
-}
-echo "与mysql服务器建立连接成功<br>";
-mysql_selectdb("messagebook", $link);
-mysql_query("set names gb2312");
+include 'conn.php';
 
 // 插入数据
 $timeStr = date("Y-M-D");
