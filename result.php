@@ -5,24 +5,17 @@
  * Date: 16/9/2
  * Time: 21:44
  */
+include "MessageBookHelper.php";
 
-$title = magic($_POST['title']);
-$username = magic($_POST['username']);
-$content = magic($_POST['content']);
+$title = MessageBookHelper::magic($_POST['title']);
+$username = MessageBookHelper::magic($_POST['username']);
+$content = MessageBookHelper::magic($_POST['content']);
 
 /**
  * ¹ýÂËº¯Êý
  * @param $str
  * @return string
  */
-function magic($str)
-{
-    $str = trim($str);
-    if (!get_magic_quotes_gpc()) {
-        $str = addslashes($str);
-    }
-    return htmlspecialchars($str);
-}
 
 echo $title . ":" . $content . ":" . $username;
 
