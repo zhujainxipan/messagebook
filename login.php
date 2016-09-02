@@ -14,7 +14,16 @@ include "MessageBookHelper.php";
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-echo $username.$password;
+echo $username . $password;
+
+$re= mysql_query("select count(*) from user where username='$username' and password='$password'");
+$row = mysql_fetch_row($re);
+$isok = $row[0];
+if ($isok == 1) {
+    echo "µÇÂ½³É¹¦";
+} else {
+    echo "µÇÂ½Ê§°Ü";
+}
 
 ?>
 
