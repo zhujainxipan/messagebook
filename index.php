@@ -12,7 +12,7 @@ $pageCount = ceil($infoCount / $pagesize);
 // 当前页号
 $currpage = empty($_GET['page']) ? 1 : $_GET["page"];
 
-if ($currpage > $pagesize) {
+if ($currpage > $pageCount) {
     $currpage = 1;
 }
 ?>
@@ -98,7 +98,11 @@ if ($currpage > $pagesize) {
 
         // 页符部分
         for ($i = 1; $i <= $pageCount; $i++) {
-            echo "<a href=''>".$i.'</a>&nbsp;';
+            if ($i == $currpage) {
+                echo "<b>$i</b>&nbsp;";
+            } else {
+                echo "<a href='?page=$i'>$i</a>&nbsp;";
+            }
         }
 
         ?>
