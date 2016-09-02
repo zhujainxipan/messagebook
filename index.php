@@ -62,6 +62,19 @@ if ($currpage > $pageCount) {
 
             return true;
         }
+
+        function isLogin() {
+            if (document.login.username.value=="") {
+                alert("请输入用户名");
+                return false;
+            }
+
+            if (document.login.password.value=="") {
+                alert("请输入密码");
+                return false;
+            }
+            return true;
+        }
     </script>
 </head>
 
@@ -73,7 +86,7 @@ if ($currpage > $pageCount) {
         <div id="logo"><img src="images/logo.gif" alt="留言本实例"></div>
         <div id="search">
 
-            <form action="" method="post" name="login" onsubmit="">
+            <form action="" method="post" name="login" onsubmit="return isLogin()">
                 用户名：<input name="username" size="12" type="text">
                 密码：<input name="password" size="12" type="password">
                 <input type="hidden" value="login" name="action"/>
