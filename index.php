@@ -6,6 +6,44 @@
     <title>留言本</title>
     <link href="images/index.css" rel="stylesheet" type="text/css">
 
+    <script>
+        function test() {
+            var sum;
+            // 标题验证
+            if (document.frm.title.value == "") {
+                alert("请填写标题");
+                return false;
+            } else {
+                sum = document.frm.title.value.length;
+                if (sum < 5 || sum > 20) {
+                    alert("留言标题：请填写5-20个字符");
+                    return false;
+                }
+            }
+
+
+            // username验证
+            if (document.frm.username.value == "") {
+                alert("请填写姓名");
+                return false;
+            } else {
+                sum = document.frm.username.value.length;
+                if (sum < 2 || sum > 10) {
+                    alert("留言姓名：请填写2-10个字符");
+                    return false;
+                }
+            }
+
+            // 内容验证
+            sum = document.frm.content.value.length;
+            if (sum < 10) {
+                alert("内容不能小于10个字符");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </head>
 
 
@@ -31,7 +69,7 @@
 
         <fieldset>
             <legend>发表留言</legend>
-            <form action="" method="post" name="frm" onsubmit="">
+            <form action="" method="post" name="frm" onsubmit="return test()">
                 <table border="0" cellpadding="5" cellspacing="0" width="0">
                     <tbody>
                     <tr>
