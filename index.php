@@ -1,3 +1,22 @@
+<?php
+
+include "conn.php";
+// 每页大小
+$pagesize = 2;
+$result = mysql_query("select count(*) from messagebook");
+$row = mysql_fetch_row($result);
+// 总信息条数
+$infoCount = $row[0];
+// 总页数
+$pageCount = ceil($infoCount / $pagesize);
+// 当前页号
+$currpage = empty($_GET['page']) ? 1 : $_GET["page"];
+
+if ($currpage > $pagesize) {
+    $currpage = 1;
+}
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -65,7 +84,24 @@
     </div>
 
     <div id="left">
-        <h3>条留言</h3>
+        <h3><?php echo $infoCount; ?>条留言</h3>
+
+        <?php
+        // 循环体
+        $re = mysql_query("select * from messagebook limit " . ($currpage - 1) * $pagesize . "," . $pagesize);
+        while ($row = mysql_fetch_array($re)) {
+            $ecoStr = '
+<p class="style0">' . $row["username"] . '&nbsp;&nbsp;' . $row['adddate'] . '</p>
+<div class="content">' . $row['content'] . '</div>';
+            echo $ecoStr;
+        }
+
+        // 页符部分
+        for ($i = 1; $i <= $pageCount; $i++) {
+            echo "<a href=''>".$i.'</a>&nbsp;';
+        }
+
+        ?>
 
         <fieldset>
             <legend>发表留言</legend>
