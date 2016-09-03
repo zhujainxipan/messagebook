@@ -1,6 +1,7 @@
 <?php
-
 include "conn.php";
+session_start();
+
 // 每页大小
 $pagesize = 3;
 $result = mysql_query("select count(*) from messagebook");
@@ -87,7 +88,7 @@ if ($currpage > $pageCount) {
         <div id="search">
             <?php
 
-            session_start();
+           // session_start();
 
             if (isset($_SESSION["isok"]) && $_SESSION["isok"] == "ok") {
                 echo "登陆成功，欢迎您回来。";

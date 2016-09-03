@@ -15,7 +15,6 @@ $isok = $row[0];
 
 if($isok==1)
 {
-
     $_SESSION["isok"]="ok";
     echo "<script>alert('µÇÂ½³É¹¦');location.href='index.php';</script>";
 }
