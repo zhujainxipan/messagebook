@@ -87,7 +87,8 @@ if ($currpage > $pageCount) {
         <div id="search">
             <?php
 
-            echo $_SESSION["isok"];
+            session_start();
+
             if (isset($_SESSION["isok"]) && $_SESSION["isok"] == "ok") {
                 echo "登陆成功，欢迎您回来。";
             } else {
@@ -115,7 +116,17 @@ if ($currpage > $pageCount) {
 <p class="style0">' . $row["username"] . '&nbsp;&nbsp;' . $row['adddate'] . '</p>
 <div class="content">' . $row['content'] . '</div>';
             echo $ecoStr;
+
+            if ($row["isok"] == 1) {
+                echo ' <div style="font-size:14px;color:red;line-height:25px;">管理员回复：' . $row["recontent"] . '</div>';
+            }
+
+            if (isset($_SESSION["isok"]) && $_SESSION["isok"] == "ok") {
+                echo "<a href='del.php?id=" . $row["id"] . "'>删除</a> <a href='edit.php?id=" . $row["id"] . "'>回复</a>";
+            }
         }
+
+        echo "<br><br>页码：";
 
         // 页符部分
         for ($i = 1; $i <= $pageCount; $i++) {

@@ -22,25 +22,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.346395">
-              <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+            <state vertical-scroll-proportion="-2.7962964">
+              <caret line="125" column="13" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
               <folding>
-                <marker date="1472867285000" expanded="true" signature="73:105" placeholder="select count..messagebook..." />
-                <marker date="1472867285000" expanded="true" signature="3019:3087" placeholder="select * fro..messagebook..." />
+                <marker date="1472870525000" expanded="true" signature="73:105" placeholder="select count..messagebook..." />
+                <marker date="1472870525000" expanded="true" signature="3013:3081" placeholder="select * fro..messagebook..." />
+                <marker date="1472870525000" expanded="true" signature="3403:3445" placeholder="..." />
+                <marker date="1472870525000" expanded="true" signature="4017:5166" placeholder="..." />
+                <marker date="1472870525000" expanded="true" signature="4140:5146" placeholder="..." />
+                <marker date="1472870525000" expanded="true" signature="4217:5126" placeholder="..." />
+                <marker date="1472870525000" expanded="true" signature="4245:5101" placeholder="..." />
+                <marker date="1472870525000" expanded="true" signature="4270:4423" placeholder="..." />
+                <marker date="1472870525000" expanded="true" signature="4448:4601" placeholder="..." />
+                <marker date="1472870525000" expanded="true" signature="4626:4777" placeholder="..." />
+                <marker date="1472870525000" expanded="true" signature="4802:5072" placeholder="..." />
+                <marker date="1472870525000" expanded="true" signature="4858:5046" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conn.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conn.php">
+      <file leaf-file-name="del.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/del.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              <folding />
+            <state vertical-scroll-proportion="0.23981191">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <marker date="1472870662000" expanded="true" signature="110:143" placeholder="delete from ..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,10 +64,13 @@
       <list>
         <option value="$PROJECT_DIR$/images/index.css" />
         <option value="$PROJECT_DIR$/MessageBookHelper.php" />
-        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/result.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/conn.php" />
+        <option value="$PROJECT_DIR$/save.php" />
+        <option value="$PROJECT_DIR$/edit.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/del.php" />
       </list>
     </option>
   </component>
@@ -178,7 +193,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="33" width="1208" height="811" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -186,7 +201,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24977043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -225,17 +240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65360504">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#95#0#PHP" expanded="true" />
-            <marker date="1472865652000" expanded="true" signature="-1:-1" placeholder="select count..user..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36050156">
@@ -252,13 +256,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5579937">
+          <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+          <folding>
+            <marker date="1472869322000" expanded="true" signature="-1:-1" placeholder="select * fro..messagebook..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37304077">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1472870481000" expanded="true" signature="-1:-1" placeholder="select count..user..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.106583074">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1472869019000" expanded="true" signature="-1:-1" placeholder="update messa..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.346395">
-          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+        <state vertical-scroll-proportion="-2.7962964">
+          <caret line="125" column="13" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
           <folding>
-            <marker date="1472867285000" expanded="true" signature="73:105" placeholder="select count..messagebook..." />
-            <marker date="1472867285000" expanded="true" signature="3019:3087" placeholder="select * fro..messagebook..." />
+            <marker date="1472870525000" expanded="true" signature="73:105" placeholder="select count..messagebook..." />
+            <marker date="1472870525000" expanded="true" signature="3013:3081" placeholder="select * fro..messagebook..." />
+            <marker date="1472870525000" expanded="true" signature="3403:3445" placeholder="..." />
+            <marker date="1472870525000" expanded="true" signature="4017:5166" placeholder="..." />
+            <marker date="1472870525000" expanded="true" signature="4140:5146" placeholder="..." />
+            <marker date="1472870525000" expanded="true" signature="4217:5126" placeholder="..." />
+            <marker date="1472870525000" expanded="true" signature="4245:5101" placeholder="..." />
+            <marker date="1472870525000" expanded="true" signature="4270:4423" placeholder="..." />
+            <marker date="1472870525000" expanded="true" signature="4448:4601" placeholder="..." />
+            <marker date="1472870525000" expanded="true" signature="4626:4777" placeholder="..." />
+            <marker date="1472870525000" expanded="true" signature="4802:5072" placeholder="..." />
+            <marker date="1472870525000" expanded="true" signature="4858:5046" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/del.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23981191">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <marker date="1472870662000" expanded="true" signature="110:143" placeholder="delete from ..." />
           </folding>
         </state>
       </provider>
