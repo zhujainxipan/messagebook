@@ -2,7 +2,7 @@
 
 include "conn.php";
 // 每页大小
-$pagesize = 2;
+$pagesize = 3;
 $result = mysql_query("select count(*) from messagebook");
 $row = mysql_fetch_row($result);
 // 总信息条数
@@ -64,12 +64,12 @@ if ($currpage > $pageCount) {
         }
 
         function isLogin() {
-            if (document.login.username.value=="") {
+            if (document.login.username.value == "") {
                 alert("请输入用户名");
                 return false;
             }
 
-            if (document.login.password.value=="") {
+            if (document.login.password.value == "") {
                 alert("请输入密码");
                 return false;
             }
@@ -83,16 +83,24 @@ if ($currpage > $pageCount) {
 
 <div id="main">
     <div id="header">
-        <div id="logo"><img src="images/logo.gif" alt="留言本实例"></div>
+        <div id="logo"><img src="images/logo.png" alt="留言本实例"></div>
         <div id="search">
+            <?php
 
-            <form action="login.php" method="post" name="login" onsubmit="return isLogin()">
-                用户名：<input name="username" size="12" type="text">
-                密码：<input name="password" size="12" type="password">
-                <input type="hidden" value="login" name="action"/>
-                <input name="do" value="登 陆 " class="button" type="submit">
-            </form>
-
+            echo $_SESSION["isok"];
+            if (isset($_SESSION["isok"]) && $_SESSION["isok"] == "ok") {
+                echo "登陆成功，欢迎您回来。";
+            } else {
+                ?>
+                <form action="login.php" method="post" name="login" onsubmit="return islogin();">
+                    用户名：<input name="username" size="12" type="text">
+                    密码：<input name="password" size="12" type="password">
+                    <input type="hidden" value="login" name="action"/>
+                    <input name="do" value="登 陆 " class="button" type="submit">
+                </form>
+                <?php
+            }
+            ?>
         </div>
     </div>
 
@@ -150,7 +158,7 @@ if ($currpage > $pageCount) {
 
     </div>
 
-    <div id="footer">&#169;&nbsp;2011&nbsp;www.houdunwang.com</div>
+    <div id="footer">&#169;&nbsp;2016.09.03&nbsp;http://blog.csdn.net/a910626</div>
 
 </div>
 

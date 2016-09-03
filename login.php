@@ -19,11 +19,16 @@ echo $username . $password;
 $re= mysql_query("select count(*) from user where username='$username' and password='$password'");
 $row = mysql_fetch_row($re);
 $isok = $row[0];
-if ($isok == 1) {
-    echo "µÇÂ½³É¹¦";
-} else {
+
+if($isok==1)
+{
+    session_start();
+    $_SESSION["isok"]="ok";
+    echo "<script>alert('µÇÂ½³É¹¦');location.href='index.php';</script>";
+}
+else
+{
     echo "µÇÂ½Ê§°Ü";
 }
-
 ?>
 

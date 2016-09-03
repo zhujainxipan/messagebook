@@ -24,7 +24,7 @@ echo $title . ":" . $content . ":" . $username;
 include 'conn.php';
 
 // 插入数据
-$timeStr = date("Y-M-D");
+$timeStr = date("Y-m-d");
 $insertStr = <<<EOT
 INSERT INTO messagebook(title, username, content, adddate)
 VALUES('$title', '$username', '$content', '$timeStr')
@@ -33,9 +33,9 @@ EOT;
 $isOk = mysql_query($insertStr);
 
 if ($isOk) {
-    echo "执行成功";
+    echo "<script>alert('执行成功');location.href='index.php';</script>";
 } else {
-    echo "执行失败";
+    echo "<script>alert('执行成功');location.href='index.php';</script>";
 }
 
 
